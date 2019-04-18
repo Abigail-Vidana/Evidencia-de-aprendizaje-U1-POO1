@@ -26,6 +26,7 @@ public class Materia {
         return unidades;
     }
     
+    //Pedir los datos totales (máximos) 
     public void iniciarUnidades(){
         for( int i = 0; i < unidades.length; i++){
             unidades[i].setAsistencias(Float.parseFloat(JOptionPane.showInputDialog(unidades[i].getNombre() + " Asistencias totales: ")));

@@ -29,8 +29,8 @@ public class Calificacion {
      * rubro
      */
     public void calificarAsistencia(){
-        Float Asistencias = Float.parseFloat(JOptionPane.showInputDialog(unidad.getNombre() + " Asistencias del alumno: "));
-        cAsistencia = Asistencias*10/unidad.getAsistencias();
+        byte aluAsistencias = Byte.parseByte(JOptionPane.showInputDialog(unidad.getNombre() + " Asistencias del alumno: "));
+        cAsistencia = aluAsistencias*10/unidad.getAsistencias();
     }
     /**
      * Solicita las participaciones reales del alumno, para luego compararlas con 
@@ -38,8 +38,8 @@ public class Calificacion {
      * rubro
      */
     public void calificarParticipacion(){
-        Float Participaciones = Float.parseFloat(JOptionPane.showInputDialog(unidad.getNombre() + " Participaciones del alumno: "));
-        cParticipacion = Participaciones*10/unidad.getParticipaciones();
+        short aluParticipaciones = Short.parseShort(JOptionPane.showInputDialog(unidad.getNombre() + " Participaciones del alumno: "));
+        cParticipacion = aluParticipaciones*10/unidad.getParticipaciones();
     }
     
     /**
@@ -48,8 +48,8 @@ public class Calificacion {
      * rubro
      */
     public void calificarTareas(){
-        Float Tareas = Float.parseFloat(JOptionPane.showInputDialog(unidad.getNombre() + " Tareas del alumno: "));
-        cTareas = Tareas*30/unidad.getTareas();
+        Byte aluTareas = Byte.parseByte(JOptionPane.showInputDialog(unidad.getNombre() + " Tareas del alumno: "));
+        cTareas = aluTareas*30/unidad.getTareas();
     }
     
     /**
@@ -58,8 +58,8 @@ public class Calificacion {
      * rubro
      */
     public void calificarExamen(){
-        Float Examen = Float.parseFloat(JOptionPane.showInputDialog(unidad.getNombre() + " Aciertos del alumno: "));
-        cExamen = Examen*50/unidad.getAciertosExamen();
+        Float aluExamen = Float.parseFloat(JOptionPane.showInputDialog(unidad.getNombre() + " Aciertos del alumno: "));
+        cExamen = aluExamen*50/unidad.getAciertosExamen();
         
     }
     /**
